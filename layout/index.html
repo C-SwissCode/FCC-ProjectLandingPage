@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Van Life Product Landing Page Project</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Caleb">
+  <meta name="description" content="Van life blog product landing page">
+  <link rel="stylesheet" type="text/css" href="./style-index.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Acme|Baloo+Bhai|Cinzel|Lexend+Exa|Long+Cang|Permanent+Marker|Raleway|Righteous|Roboto+Mono|Inknut+Antiqua|Space+Mono|Ubuntu&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c05d037bf5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <header id="header">
+    <img id="header-img" src="../images/bluevansmall.png" alt="van logo">
+    <h6 id="site-title">C. S. VanLife</h6>
+    <nav class="topnav" id="nav-bar">
+      <a class="nav-link" href="#center-element"><span>Home</span></a>
+      <a class="nav-link" href="#articles"><span>Articles</span></a>
+      <a class="nav-link" href="#recent-card"><span>Recent Trips</span></a>
+      <a class="nav-link" href="#footer"><span>About</span></a>
+    </nav>
+  </header>
+  <main>
+    <div id="center-element">
+      <h1 id="vanblog-heading">C. S. VanLife - Free Yourself</h1>
+      <video id="video" poster="../images/rainbowvan.jpeg" controls>
+        <source src="/videos/whiskeyandcat.mp4" type="video/mp4">
+      </video>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" name="email">
+        <label id="emailinput-label" for="email-input" class="email-form">Subscribe Now For Trip and Van
+          Updates!</label>
+        <input id="email" class="email-form" type="email" placeholder="example@domain.com" name="email">
+        <input class="email-form" id="submit" type="submit">
+        <div id="form-footer">
+          <div id="img-container">
+            <img id="inside-van-img" src="/images/screeming-in-van.jpeg">
+          </div>
+          <p id="form-footer-descriptor">
+            "You will never see the world in the same light again!"
+          </p>
+        </div>
+      </form>
+    </div>
+    <div id="articles">
+      <article class="article-cards" id="vanbuild">
+        <div class="article-img-containers">
+          <img class="article-imgs" id="popvan-img" src="../images/popupvan.png" />
+        </div>
+        <h4 class="article-headers">Popup Van Build</h4>
+        <div class=icon-link-container>
+          <a class="icon-links" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="icon-links" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="icon-links" href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie tempor odio, sed auctor sem rhoncus
+          non.
+          Vivamus consectetur a massa nec finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Donec in lorem nec lacus pharetra sagittis a eget velit.
+        </p>
+        <div class="card-footers">
+          <div class="card-footer-imgs">
+            <img src="/images/insidecrossovervan.png" />
+          </div>
+          <p class="footer-descriptors">5 min read</p>
+        </div>
+      </article>
+      <article class="article-cards" id="recent-trip">
+        <div class="article-img-containers">
+          <img class="article-imgs" id="safe-img" src="/images/safetyadvice.jpeg" />
+        </div>
+        <h4 class="article-headers">Critical Safety Tips</h4>
+        <div class=icon-link-container>
+          <a class="icon-links" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="icon-links" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="icon-links" href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="article-content">
+          Integer auctor diam ac felis accumsan lobortis. Aenean imperdiet id quam vel eleifend. Sed vel vehicula arcu,
+          at
+          gravida neque. Quisque eu hendrerit orci. Pellentesque sem massa, maximus scelerisque turpis non, venenatis
+          auctor risus. Aliquam sodales hendrerit eros, efficitur consectetur nunc luctus ac.
+        </p>
+        <div class="card-footers">
+          <div class="card-footer-imgs">
+            <img src="/images/insidecrossovervan.png" />
+          </div>
+          <p class="footer-descriptors">5 min read</p>
+        </div>
+      </article>
+      <article class="article-cards" id="saftey-tips">
+        <div class="article-img-containers">
+          <img class="article-imgs" id="stars-img" src="/images/beachvanstars.jpeg" />
+        </div>
+        <h4 class="article-headers">Under The Stars</h4>
+        <div class=icon-link-container>
+          <a class="icon-links" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="icon-links" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="icon-links" href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="article-content">
+          Phasellus eleifend mi eget vehicula aliquet. Curabitur id hendrerit diam. Quisque suscipit nec ligula eget
+          placerat. Pellentesque eleifend vestibulum bibendum. Etiam tincidunt auctor diam, et luctus nunc vestibulum
+          sed.
+          Nulla sed felis sit amet enim dictum pharetra quis sit amet lectus.
+        </p>
+        <div class="card-footers">
+          <div class="card-footer-imgs">
+            <img src="/images/insidecrossovervan.png" />
+          </div>
+          <p class="footer-descriptors">5 min read</p>
+        </div>
+      </article>
+
+      <!-- Bigger Bottom Cards-->
+
+      <article id="recent-card" class="big-article-cards" id="next-adventure">
+        <div class="big-card-header">
+          <div class="big-article-img-containers">
+            <img class="big-article-imgs" src="/images/headed-towards-mountains.jpeg" />
+          </div>
+          <h4 id="recent-trip" class="article-headers">My Most Recent Trip</h4>
+          <div class=icon-link-container>
+            <a class="icon-links" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="icon-links" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="icon-links" href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="big-card-content">
+          <p class="big-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies ultricies nisi. Nulla maximus at
+            felis
+            in ullamcorper. Sed non mi non dui varius laoreet sit amet id nisi. Phasellus rhoncus dignissim libero, quis
+            finibus justo rutrum sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis
+            egestas.
+          </p>
+          <div class="big-card-footers">
+            <div class="card-footer-imgs">
+              <img src="/images/insidecrossovervan.png" />
+            </div>
+            <p class="footer-descriptors">5 min read</p>
+          </div>
+        </div>
+      </article>
+      <article class="big-article-cards" id="crazy-stories">
+        <div class="big-card-header">
+          <div class="big-article-img-containers">
+            <img class="big-article-imgs" src="/images/feetupvan.jpeg" />
+          </div>
+          <h4 class="article-headers">Crazy Stories</h4>
+          <div class=icon-link-container>
+            <a class="icon-links" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="icon-links" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="icon-links" href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="big-card-content">
+          <p class="big-paragraph">
+            Suspendisse in arcu nec ipsum pretium laoreet. Nunc porttitor nisl eget ultrices interdum. Suspendisse
+            porttitor
+            neque sed est gravida vulputate. Pellentesque consectetur, dolor vel consequat tempus, neque velit tincidunt
+            magna, sed imperdiet nulla metus ut dui. In sodales libero vel ornare convallis.
+          </p>
+          <div class="big-card-footers">
+            <div class="card-footer-imgs">
+              <img src="/images/insidecrossovervan.png" />
+            </div>
+            <p class="footer-descriptors">5 min read</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+<footer id="footer">
+  <h3 id="about-title">About Us</h3>
+</footer>
+
+</html>
