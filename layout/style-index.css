@@ -1,402 +1,402 @@
 /* ==============
    Global Styles
    ============== */
-   :root {
-    --vid-width: 62%;
-  
-    /* Article Card Variables */
-    --card-width: 25rem;
-    --card-padding: 1rem;
-    --card-margin: 1rem;
-  
-    /* article images */
-    --img-container-width: 25em;
-    --img-container-height: 15em;
-  }
-  
-  /* ==============
+:root {
+  --vid-width: 62%;
+
+  /* Article Card Variables */
+  --card-width: 25rem;
+  --card-padding: 1rem;
+  --card-margin: 1rem;
+
+  /* article images */
+  --img-container-width: 25em;
+  --img-container-height: 15em;
+}
+
+/* ==============
      Typography
      ============== */
-  
-  #site-title {
-    font-size: 1.5rem;
-    font-family: "Long Cang";
-    text-decoration: underline;
-    color: #D6D4D3;
-  }
-  
-  .nav-link {
-    color: #D6D4D3;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  
-  #vanblog-heading {
-    color: #D6D4D3;
-    font-size: 3rem;
-    text-decoration: underline;
-    /* font-family: Acme; */
-    /* font-family: "Baloo Bhai"; */
-    /* font-family: Cinzel; */
-    /* font-family: "Lexend Exa"; */
-    /* font-family: "Long Cang"; */
-    /* font-family: "Permanent Marker"; */
-    /* font-family: Raleway; */
-    /* font-family: Righteous; */
-    font-family: "Roboto Mono";
-    /* font-family: Ubuntu; */
-  }
-  
-  #form {
-    color: #D6D4D3;
-  }
-  
-  #emailinput-label {
-    font-family: Raleway;
-    font-size: 2.1rem;
-    line-height: 50px;
-    width: 22rem;
-    text-align: center;
-  }
-  
-  #email {
-    align-self: start;
-    font-size: 1.5rem;
-  }
-  
-  #submit {
-    font-size: 1.25rem;
-  }
-  
-  /* ==============
+
+#site-title {
+  font-size: 1.5rem;
+  font-family: "Long Cang";
+  text-decoration: underline;
+  color: #D6D4D3;
+}
+
+.nav-link {
+  color: #D6D4D3;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#vanblog-heading {
+  color: #D6D4D3;
+  font-size: 3rem;
+  text-decoration: underline;
+  /* font-family: Acme; */
+  /* font-family: "Baloo Bhai"; */
+  /* font-family: Cinzel; */
+  /* font-family: "Lexend Exa"; */
+  /* font-family: "Long Cang"; */
+  /* font-family: "Permanent Marker"; */
+  /* font-family: Raleway; */
+  /* font-family: Righteous; */
+  font-family: "Roboto Mono";
+  /* font-family: Ubuntu; */
+}
+
+#form {
+  color: #D6D4D3;
+}
+
+#emailinput-label {
+  font-family: Raleway;
+  font-size: 2.1rem;
+  line-height: 50px;
+  width: 22rem;
+  text-align: center;
+}
+
+#email {
+  align-self: start;
+  font-size: 1.5rem;
+}
+
+#submit {
+  font-size: 1.25rem;
+}
+
+/* ==============
      Layout
      ============== */
-  
-  /* Header Layout */
-  
-  body {
-    /* padding-bottom: 20rem; */
-  }
 
-  footer {
-    width: 98%;
-    height: 20rem;
-    border-style: solid;
-    position: relative;
-    margin: 5rem 1rem 1rem 1rem;
-    padding: 0;
-  }
-  
-  #header {
-    /* max-width: 100vw; */
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #0f1a24;
-    width: 99%;
-    top: -1px;
-    z-index: 1;
-    /* background-color: #27547A; */
-  }
-  
-  #site-title {
-    position: absolute;
-    top: -3.25rem;
-    width: 97%;
-    text-align: center;
-  }
-  
-  #nav-bar {
-    /* flex-basis: 45rem; */
-    /* width: 98vw; */
-    /* text-align: right; */
-    margin: 2rem 0.5rem 0.5rem 1rem;
-    align-self: flex-end;
-  }
-  
-  .nav-link {
-    padding: 0 0.25rem 0 0.5rem;
-    /* margin: 0 0.5rem 0 0.5rem; */
-    border-style: solid;
-    border-width: 1px;
-    border-color: #0f1a24;
-    transition: ease-in 350ms;
-  }
-  
-  .nav-link:hover {
-    color: white;
-    background-color: rgb(0, 81.2, 76.1);
-    border-style: solid;
-    border-color: white;
-  }
-  
-  /* Center Layout */
-  
-  #center-element {
-    background-color: #0f283f;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 5.4rem;
-  }
-  
-  #vanblog-heading {
-    width: 100%;
-    text-align: center;
-    margin: 1rem 0 2rem 0;
-    background-color: rgb(15, 40, 63);
-  }
-  
-  #video {
-    max-width: var(--vid-width);
-    height: auto;
-    object-fit: cover;
-  }
-  
-  #form {
-    flex-basis: 35%;
-    margin: 0 1rem 0 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 9rem 4rem 2rem 1fr;
-    justify-items: center;
-    align-items: center;
-    grid-row-gap: 3rem;
-  }
-  
-  .email-form {
-    margin: 0 2rem 0 2rem;
-    position: relative;
-    top: 1rem;
-  }
-  
-  #form-footer {
-    width: 28rem;
-    align-self: end;
-    margin: 0 0 1rem 0.5rem;
-    justify-self: center;
-  }
-  
-  #img-container {
-    width: 3.75em;
-    height: 3.75em;
-    float: left;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  
-  #inside-van-img {
-    width: 125%;
-    height: auto;
-  }
-  
-  #form-footer-descriptor {
-    position: relative;
-    left: 25px;
-  }
-  
-  /* Article Layout */
-  
-  #articles {
-    position: relative;
-    top: 5.4rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 4rem 0 4rem;
-  }
-  
-  .article-cards {
-    width: var(--card-width);
-    max-width: 75%;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #0f283f;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .article-img-containers {
-    width: 25em;
-    height: 15em;
-    overflow: hidden;
-    margin: 0 0 1em 0;
-  }
-  
-  .article-imgs {
-    max-width: 110%;
-    display: block;
-    height: auto;
-  }
-  
-  #popvan-img {
-    position: relative;
-    left: -10%;
-    top: -6%;
-  }
-  
-  #safe-img {
-    position: relative;
-    left: -9%;
-    transform: scale(1.05);
-  }
-  
-  #stars-img {
-    position: relative;
-    left: -6%;
-    transform: scale(1.2);
-  }
-  
-  .article-headers {
-    margin: 1em 5em 0em 5em;
-    font-family: Ubuntu;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: whitesmoke;
-    opacity: 0.9;
-  }
-  
-  .article-headers::after {
-    content: "";
-    display: block;
-    width: 4em;
-    height: 3px;
-    background: turquoise;
-    opacity: 0.1;
-    margin: 1.25em auto 1.25em;
-  }
-  
-  .article-content {
-    width: 21em;
-    margin: 1em 0 1.5em 1em;
-    padding: 0;
-    color: whitesmoke;
-    opacity: 0.8;
-    font-family: "Space Mono";
-    font-size: 0.85em;
-  }
-  
-  .card-footers {
-    width: 100%;
-    margin: 1.5rem 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-descriptors {
-    padding: 0;
-    margin: 0;
-    /* color: turquoise; */
-    color: whitesmoke;
-    opacity: 0.5;
-  }
-  
-  .card-footer-imgs {
-    box-sizing: border-box;
-    width: 3em;
-    height: 3em;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 50%;
-    border-color: rgba(245, 245, 245, 0.6);
-    overflow: hidden;
-  }
-  
-  .card-footer-imgs img {
-    width: 120%;
-    height: auto;
-    transform: scale(1.5) translate(0, 5%);
-    
-  }
-  
-  .icon-link-container {
-    width: 5em;
-    transform: scale(1.25);
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5em 1em 5em;
-  }
-  
-  .icon-links {
-    color: turquoise;
-    opacity: 0.15;
-  }
-  
-  .icon-links:hover {
-    opacity: 0.7;
-  }
-  
-  /* Big Article Cards */
-  
-  .big-article-cards {
-    background-color: #0f283f;
-    width: 48rem;
-    height: 24rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem;
-    padding: 0;
-  }
-  
-  .big-card-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .big-card-content {
-    flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 15em;
-    border-style: none none none solid;
-    margin-left: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    border-color: rgba(64, 224, 208, 0.15);
-  }
-  
-  .big-paragraph {
-    color: whitesmoke;
-    opacity: 0.8;
-    font-family: "Space Mono";
-    font-size: 0.85em;
-  }
-  
-  .big-card-footers {
-    align-self: center;
-    width: 100%;
-    margin: 0;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Big Images */
-  
-  .big-article-img-containers {
-    width: 30em;
-    height: 15em;
-    overflow: hidden;
-    margin: 0 0 1em 0;
-  }
-  
-  .big-article-imgs {
-    max-width: 110%;
-    display: block;
-    height: auto;
-  }
+/* Header Layout */
+
+body {
+  /* padding-bottom: 20rem; */
+}
+
+footer {
+  width: 98%;
+  height: 20rem;
+  border-style: solid;
+  position: relative;
+  margin: 5rem 1rem 1rem 1rem;
+  padding: 0;
+}
+
+#header {
+  /* max-width: 100vw; */
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #0f1a24;
+  width: 99%;
+  top: -1px;
+  z-index: 1;
+  /* background-color: #27547A; */
+}
+
+#site-title {
+  position: absolute;
+  top: -3.25rem;
+  width: 97%;
+  text-align: center;
+}
+
+#nav-bar {
+  /* flex-basis: 45rem; */
+  /* width: 98vw; */
+  /* text-align: right; */
+  margin: 2rem 0.5rem 0.5rem 1rem;
+  align-self: flex-end;
+}
+
+.nav-link {
+  padding: 0 0.25rem 0 0.5rem;
+  /* margin: 0 0.5rem 0 0.5rem; */
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0f1a24;
+  transition: ease-in 350ms;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgb(0, 81.2, 76.1);
+  border-style: solid;
+  border-color: white;
+}
+
+/* Center Layout */
+
+#center-element {
+  background-color: #0f283f;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 5.4rem;
+}
+
+#vanblog-heading {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+  background-color: rgb(15, 40, 63);
+}
+
+#video {
+  max-width: var(--vid-width);
+  height: auto;
+  object-fit: cover;
+}
+
+#form {
+  flex-basis: 35%;
+  margin: 0 1rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9rem 4rem 2rem 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 3rem;
+}
+
+.email-form {
+  margin: 0 2rem 0 2rem;
+  position: relative;
+  top: 1rem;
+}
+
+#form-footer {
+  width: 28rem;
+  align-self: end;
+  margin: 0 0 1rem 0.5rem;
+  justify-self: center;
+}
+
+#img-container {
+  width: 3.75em;
+  height: 3.75em;
+  float: left;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#inside-van-img {
+  width: 125%;
+  height: auto;
+}
+
+#form-footer-descriptor {
+  position: relative;
+  left: 25px;
+}
+
+/* Article Layout */
+
+#articles {
+  position: relative;
+  top: 5.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 4rem 0 4rem;
+}
+
+.article-cards {
+  width: var(--card-width);
+  max-width: 75%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #0f283f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article-img-containers {
+  width: 25em;
+  height: 15em;
+  overflow: hidden;
+  margin: 0 0 1em 0;
+}
+
+.article-imgs {
+  max-width: 110%;
+  display: block;
+  height: auto;
+}
+
+#popvan-img {
+  position: relative;
+  left: -10%;
+  top: -6%;
+}
+
+#safe-img {
+  position: relative;
+  left: -9%;
+  transform: scale(1.05);
+}
+
+#stars-img {
+  position: relative;
+  left: -6%;
+  transform: scale(1.2);
+}
+
+.article-headers {
+  margin: 1em 5em 0em 5em;
+  font-family: Ubuntu;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  opacity: 0.9;
+}
+
+.article-headers::after {
+  content: "";
+  display: block;
+  width: 4em;
+  height: 3px;
+  background: turquoise;
+  opacity: 0.1;
+  margin: 1.25em auto 1.25em;
+}
+
+.article-content {
+  width: 21em;
+  margin: 1em 0 1.5em 1em;
+  padding: 0;
+  color: whitesmoke;
+  opacity: 0.8;
+  font-family: "Space Mono";
+  font-size: 0.85em;
+}
+
+.card-footers {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-descriptors {
+  padding: 0;
+  margin: 0;
+  /* color: turquoise; */
+  color: whitesmoke;
+  opacity: 0.5;
+}
+
+.card-footer-imgs {
+  box-sizing: border-box;
+  width: 3em;
+  height: 3em;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  border-color: rgba(245, 245, 245, 0.6);
+  overflow: hidden;
+}
+
+.card-footer-imgs img {
+  width: 120%;
+  height: auto;
+  transform: scale(1.5) translate(0, 5%);
+
+}
+
+.icon-link-container {
+  width: 5em;
+  transform: scale(1.25);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5em 1em 5em;
+}
+
+.icon-links {
+  color: turquoise;
+  opacity: 0.15;
+}
+
+.icon-links:hover {
+  opacity: 0.7;
+}
+
+/* Big Article Cards */
+
+.big-article-cards {
+  background-color: #0f283f;
+  width: 48rem;
+  height: 24rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 0;
+}
+
+.big-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-card-content {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15em;
+  border-style: none none none solid;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-color: rgba(64, 224, 208, 0.15);
+}
+
+.big-paragraph {
+  color: whitesmoke;
+  opacity: 0.8;
+  font-family: "Space Mono";
+  font-size: 0.85em;
+}
+
+.big-card-footers {
+  align-self: center;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Big Images */
+
+.big-article-img-containers {
+  width: 30em;
+  height: 15em;
+  overflow: hidden;
+  margin: 0 0 1em 0;
+}
+
+.big-article-imgs {
+  max-width: 110%;
+  display: block;
+  height: auto;
+}
 
 /* Centers and lines up center flex items in one column as veiw port gets smaller */
 @media (max-width: 1550px) {
@@ -538,7 +538,7 @@
 
   .big-article-img-containers {
     width: 100%;
-    height:auto;
+    height: auto;
   }
 
   .article-headers {
